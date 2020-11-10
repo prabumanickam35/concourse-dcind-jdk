@@ -3,7 +3,10 @@ Based on [karlkfi/concourse-dcind](https://github.com/karlkfi/concourse-dcind) w
 
 Perfect for Java/Kotlin projects using [Testcontainers](https://www.testcontainers.org/) for integration tests.
 
-## Usage
+## How to get it
+Images published to [Docker Hub](https://hub.docker.com/r/arrivalmobility/concourse-dcind-jdk).
+
+## How to use it
 Example task file: 
 ```yaml
 ---
@@ -13,7 +16,7 @@ image_resource:
   type: docker-image
   source:
     repository: arrivalmobility/concourse-dcind-jdk
-    tag: 1.0.0
+    tag: VERSION
 
 inputs:
   - name: my-project
