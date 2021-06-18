@@ -16,9 +16,9 @@ then
   exit 1
 fi
 
-docker build -t "arrivalmobility/concourse-dcind-jdk:$version" .
+docker build -t "pprabu49/concourse-dcind-jdk:$version" .
 
-docker push arrivalmobility/concourse-dcind-jdk:"$version"
+docker push pprabu49/concourse-dcind-jdk:"$version"
 
 git tag $version
 
