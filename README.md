@@ -1,5 +1,5 @@
 # Concourse Docker-in-Docker with JDK
-Based on [karlkfi/concourse-dcind](https://github.com/karlkfi/concourse-dcind) with Open JDK 11 added on top.
+Based on [karlkfi/concourse-dcind](https://github.com/karlkfi/concourse-dcind) with Open JDK 8 added on top.
 
 Perfect for Java/Kotlin projects using [Testcontainers](https://www.testcontainers.org/) for integration tests.
 
@@ -15,8 +15,8 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: arrivalmobility/concourse-dcind-jdk
-    tag: VERSION
+    repository: pprabu49/concourse-dcind-jdk
+    tag: {VERSION}
 
 inputs:
   - name: my-project
